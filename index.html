@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Braingym</title>
+  <style>
+    body {
+      font-family: Avenir, Avenir Next, sans-serif;
+      background-color: white;
+      color: #333;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #ff6600;
+      margin-bottom: 30px;
+    }
+
+    button, input[type="text"] {
+      font-size: 16px;
+      padding: 10px;
+      margin: 5px;
+    }
+
+    #results {
+      margin-top: 30px;
+    }
+
+    #round-history {
+      margin-top: 50px;
+      text-align: left;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Braingym</h1>
+  <h2>Beat your best time in a round of 5 </h2>
+  <div id="countdown"></div>
+  <div id="question"></div>
+  <input type="text" id="answer" autocomplete="off" />
+  <button id="start" onclick="startRound()">Start Round</button>
+    <div id="results">
+      Time taken: <span id="time-taken">0</span> seconds
+      <br>
+      Round time: <span id="roundTime">0</span> seconds
+      <br>
+      Total time: <span id="totalTime">0</span> seconds
+    </div>
+    <div id="round-history">
+      <h3>Round History</h3>
+      <ul id="timeHistory"></ul>
+    </div>
+  <script src="braingym.js"></script>
+</body>
+</html>
